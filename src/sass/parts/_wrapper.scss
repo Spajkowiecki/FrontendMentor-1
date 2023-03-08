@@ -1,0 +1,28 @@
+@use "../basics/variables" as *;
+@import "../basics/helpers";
+
+.wrapper {
+  &__left {
+    @include flex-cl();
+    padding: 30px;
+    height: 330px;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient($slateBlue, $royalBlue);
+    border-radius: 0px 0px 30px 30px;
+  }
+
+  &__right {
+    color: #212121;
+    padding: 30px;
+  }
+
+  &__title {
+    &--left {
+      font-size: 16px;
+      color: rgba(216, 216, 216, 0.8);
+      font-weight: 700;
+    }
+  }
+}

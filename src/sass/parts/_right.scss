@@ -1,0 +1,59 @@
+@use "../basics/variables" as *;
+@import "../basics/helpers";
+
+.right {
+  &__list {
+    @include flex-cl();
+    gap: 10px;
+  }
+}
+
+.list {
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 16px;
+    &--max {
+      color: rgb(164, 164, 164);
+    }
+
+    span:first-child:not(:last-child) {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    &--1 {
+      > :first-child {
+        color: $lightRed;
+      }
+      font-weight: 700;
+      background: rgba($lightRed, 0.05);
+    }
+    &--2 {
+      > :first-child {
+        color: $orange;
+      }
+      font-weight: 700;
+      background: rgba($orange, 0.05);
+    }
+    &--3 {
+      > :first-child {
+        color: $teal;
+      }
+      font-weight: 700;
+      background: rgba($teal, 0.05);
+    }
+    &--4 {
+      > :first-child {
+        color: $cobalt;
+        fill: $cobalt;
+      }
+      font-weight: 700;
+      background: rgba($cobalt, 0.05);
+    }
+  }
+}

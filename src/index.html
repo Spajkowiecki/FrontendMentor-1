@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./sass/index.scss">
+
+  <title>Frontend Mentor | Results summary component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <div class=wrapper__left>
+      <p class="wrapper__title--left">Your Result</p>
+      <div class="left__circle">
+        <p>76</p>
+        <p>of 100</p>
+      </div>
+      <div class="left__bottomText">
+        <p>Great</p>
+        <p>
+          You scored higher than 65% of the people who have taken these tests.</p>
+      </div>
+    </div>
+    <div class="wrapper__right">
+      <p class="wrapper__right--left">Summary</p>
+      <ul class="right__list">
+        <li class="list__item list__item--1">
+          <span><img src="./assets/images/icon-reaction.svg" alt="">Reaction</span>
+          <span>80 <span class="list__item--max">/ 100</span></span>
+        </li>
+        <li class="list__item list__item--2">
+          <span><img src="./assets/images/icon-memory.svg" alt="">Memory</span>
+          <span>92 <span class="list__item--max">/ 100</span></span>
+        </li>
+        <li class="list__item list__item--3">
+
+          <span><img src="./assets/images/icon-verbal.svg" alt="">Verbal</span>
+          <span>61 <span class="list__item--max">/ 100</span></span>
+        </li>
+        <li class="list__item list__item--4">
+
+          <span><img src="./assets/images/icon-visual.svg" alt="">
+            Visual
+          </span>
+          <span>72 <span class="list__item--max">/ 100</span></span>
+        </li>
+      </ul>
+      <button>Continue
+      </button>
+    </div>
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+
+</html>
